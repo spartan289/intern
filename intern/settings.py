@@ -25,7 +25,7 @@ SECRET_KEY = '2+%*9to20cfvt=hn%lsnsuou6&j#(#x619)yj+=-bh5%$*3=fj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://convesia.herokuapp.com/']
 
 
 # Application definition
