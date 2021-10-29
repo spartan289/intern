@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Index {% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+  <div class="col-md-6 order-md-2">
+      <img src="{% static 'images/undraw_file_sync_ot38.svg' %}" alt="Image" class="img-fluid">
+  </div>
+  <div class="col-md-6 contents">
+      <div class="row justify-content-center">
+      <div class="col-md-8">
+          <div class="mb-4">
+          <h3><strong>NEMESYS</strong></h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+      </div>
+          
+      <a href="{% url 'login' %}"><button class="btn text-white btn-block btn-secondary"> Login</button></a><br>
+      <a href="{% url 'register' %}"><button class="btn text-white btn-block btn-secondary">Register</button></a><br>
+
+          
+      
+  </div>
+  
+  </div>
+</div>
+</div>
+{% endblock %}

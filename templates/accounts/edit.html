@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <h3>Hello {{username}}</h3>
+    <a href="/logout">Logout</a>
+    <a href="/edit">Edit Details</a>
+    <a href="/delete_user">Delete User</a>
+    {% for user in users %}
+    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="{{user.username}}">
+        <label for="password">Password</label>
+        <input type="password" name="password" value="{{user.password}}">
+        <label for="email">Email</label>
+        <input type="text" name="email" value="{{user.email}}">
+        <label for="address" name="address" value="{{user.address}}">Address</label>
+        <input type="submit" name="submit" value="Update">
+    </form>
+
+        Username: {{user.username}} <br>
+        Email: {{user.email}} <br>
+        Address: {{user.address}} <br>
+    </body>
+    {% endfor %}
+</html>
+</body>
+</html>
